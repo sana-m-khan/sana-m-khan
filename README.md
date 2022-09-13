@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @sana-m-khan
+- 🌱 I’m currently learning Python and C++
+- 📫 Reach me at khan.mt.sana@gmail.com
