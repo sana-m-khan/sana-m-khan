@@ -1,0 +1,146 @@
+/*
+Name: Sana Khan
+Project Name: Perpetual Day Calendar
+Project Description: Finds day of given date by user.
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int month, day, year, century_value, year_value, month_value, day_value, diw;
+	string month_name;
+
+	cout << "Enter the month (1-12): ";
+	cin >> month;
+
+	if (!cin || month < 1 || month > 12) {
+		cout << "Invalid input. Exiting...\n";
+		return 1;
+	}
+
+	cout << "Enter the date for month " << month << ": ";
+	cin >> day;
+
+	if (!cin || day < 1 || day > 31) {
+		cout << "Invalid input. Exiting...\n";
+		return 1;
+	}
+	if (month == 4 || month == 6 || month == 9 || month == 11) {
+		if (day > 30) {
+			cout << "Invalid input. Exiting...\n";
+			return 1;
+		}
+	}
+	else if (month == 2) {
+		if (day > 29) {
+			cout << "Invalid input. Exiting...\n";
+		}
+	}
+
+	cout << "Enter the year for " << month << "-" << day << ": ";
+	cin >> year;
+
+	if (!cin || year <= 45) {
+		cout << "Invalid input. Exiting...\n";
+		return 1;
+	}
+	if (month == 2) {
+		if (year <= 1582 ||
+			!(year % 4 == 0 && (year % 100 != 0 || year % 400))) {
+			cout << "Invalid inpupt. Exiting...\n";
+			return 1;
+		}
+	}
+
+	if (month == 1) {
+		month_value = 11;
+	}
+	else if (month == 2) {
+		month_value = 12;
+	}
+	else {
+		month_value = month - 2;
+	}
+
+	century_value = year / 100;
+	year_value = year % 100;
+	if (month == 1 || month == 2) {
+		year_value--;
+	}
+
+	if (year < 1582 || (year == 1582 && (month < 10 || (month == 10 && day < 15)))) {
+		day_value = day + 10;
+		day_value -= ((15 - century_value) - (15 - century_value) / 4);
+	}
+	else {
+		day_value = day;
+	}
+	
+
+	diw = (int)(day_value + 5 * century_value + year_value + century_value / 4 + year_value / 4 + 2.6 * month_value - .2) % 7;
+
+	if (month == 1) {
+		month_name = "January";
+	}
+	else if (month == 2) {
+		month_name = "Feburary";
+	}
+	else if (month == 3) {
+		month_name = "March";
+	}
+	else if (month == 4) {
+		month_name = "April";
+	}
+	else if (month == 5) {
+		month_name = "May";
+	}
+	else if (month == 6) {
+		month_name = "June";
+	}
+	else if (month == 7) {
+		month_name = "July";
+	}
+	else if (month == 8) {
+		month_name = "August";
+	}
+	else if (month == 9) {
+		month_name = "September";
+	}
+	else if (month == 10) {
+		month_name = "October";
+	}
+	else if (month == 11) {
+		month_name = "November";
+	}
+	else {
+		month_name = "December";
+	}
+	
+	if (diw == 0) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Sunday.\n";
+	}
+	else if (diw == 1) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Monday.\n";
+	}
+	else if (diw == 2) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Tuesday.\n";
+	}
+	else if (diw == 3) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Wednesday.\n";
+	}
+	else if (diw == 4) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Thursday.\n";
+	}
+	else if (diw == 5) {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Friday.\n";
+	}
+	else {
+		cout << month_name << " " << day_value << ", " << century_value << year_value << " is a Saturday.\n";
+	}
+	
+	return 0;
+}
