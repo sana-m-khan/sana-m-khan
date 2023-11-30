@@ -1,3 +1,3 @@
 - 👋 Hi, I’m @sana-m-khan
-- 🌱 I’m currently learning Python and C++
+- 🌱 I’m currently learning Python, C++, and Java. Lowkey always confused but vibing thru it!
 - 📫 Reach me at khan.mt.sana@gmail.com
