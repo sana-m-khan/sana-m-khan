@@ -1,17 +1,15 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Sana Khan
 =================================================================================================================================
 
-Student
+Student at Binghamton University (SUNY)
 -------
-
-I've been learning how to code since late 2021, and I started learning with Girls Who Code in python! Since then, I've had experience with languages such as Java, C++, HTML, and more! I'm currently working on learning more about Software Engineering and Cybersecurity. I hope to continue my journey in tech, and connect with more people. :)
 
 * 🌍  I'm based in New York
 * 🖥️  See my portfolio at [Linkedin](http://www.linkedin.com/in/sana-khan-111m)
-* ✉️  You can contact me at [khan.mt.sana@gmail.com](mailto:khan.mt.sana@gmail.com)
-* 🧠  I'm learning more about DSA
+* ✉️  You can contact me at [skhan63@binghamton.edu](mailto:skhan63@binghamton.edu)
+* 🧠  I'm learning more about cybersecurity
 * 🤝  I'm open to collaborating on any projects!
-* ⚡  Most nights, I work as batman
+* ⚡  I really, really, really like to socialize :P
 
 ### Skills
 
