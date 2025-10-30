@@ -9,7 +9,7 @@ Student at Binghamton University (SUNY)
 * ✉️  You can contact me at [skhan63@binghamton.edu](mailto:skhan63@binghamton.edu)
 * 🧠  I'm learning more about cybersecurity
 * 🤝  I'm open to collaborating on any projects!
-* ⚡  I really, really, really like to socialize :P
+* ⚡  LANGUAGES: C++, Python, Java, NetLogo
 
 ### Skills
 
